@@ -1,3 +1,6 @@
 provider "aws" {
-    region = "us-east-1"
+    region = var.region
+}
+variable "region" {
+    default = "us-east-1"
 }
